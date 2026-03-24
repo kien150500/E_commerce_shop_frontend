@@ -1,4 +1,4 @@
-import React from 'react'
+import HomeCard from "./HomeCard";
 
 const CardContainer = () => {
   return (
@@ -6,11 +6,16 @@ const CardContainer = () => {
         <h4 style={{ textAlign: "center"}}>Our Products</h4>
         <div clasName="container px-4 px-lg-5 mt-5">
             <div className="row justify-content-center">
-                
+                <HomeCard/>
+                <HomeCard/>
+                <HomeCard/>
+                <HomeCard/>
+                <HomeCard/>
+                <HomeCard/>
             </div>
         </div>
     </section>
   )
 }
 
-export default CardContainer
+export default CardContainer;
