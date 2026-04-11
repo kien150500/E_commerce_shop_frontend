@@ -2,7 +2,7 @@ import {Link} from 'react-router-dom'
 
 const NavBarLink =() => {
     return (
-        <u1 className="navbar-nav ms-auto mb-2 mb-lg-0">
+        <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
                 <a className="nav-link aactive fw-semibold" href="#!">Home</a>
             </li>
@@ -15,7 +15,7 @@ const NavBarLink =() => {
             <li className="nav-item">
                 <a className="nav-link fw-semibold" href="#!">Contact</a>
             </li>
-        </u1>
+        </ul>
     )
 }
 
