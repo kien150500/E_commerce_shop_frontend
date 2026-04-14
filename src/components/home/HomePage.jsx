@@ -2,6 +2,8 @@ import Header from "./Header";
 import CardContainer from "./CardContainer";
 import api from "../../api";
 import { useEffect, useState } from "react";
+import PlaceHolderContainer from "../ui/PlaceHolderContainer";
+
 
 const HomePage = () => {
   const [products, setProducts] = useState([]);
@@ -26,7 +28,7 @@ const HomePage = () => {
   return (
     <>
       <Header />
-      <CardContainer products={products} />
+      {loading ? <PlaceHolderContainer/> : <CardContainer products={products} />}
     </>
   );
 };
